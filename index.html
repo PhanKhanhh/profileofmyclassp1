@@ -1,34 +1,98 @@
-<!DOCTYPE html>
-<html lang="en"></html>
 <html>
 <head>
-    <title>Design a web ngu</title>
+    <title>Profile Thieu Nang</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="logo.png" alt="logo">
-            <ul>
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#" onclick="location.href='https://www.facebook.com/itvlu'">Information Technology </a></li>
-                    <li> <a href="#" onclick="location.href='https://www.facebook.com/groups/408432347338773'">72K27DB01</a></li>
-                    <li> <a href="#">Bi thu real</a></li>
-                    <li> <a href="#" onclick="location.href='https://www.facebook.com/pypy.nguyen.948'">Nhu thien</a></li>
-                </ul>
-            </ul>
+ <div class="hero">
+    <h1>PROFILE OF MY CLASS (P1)</h1>
+
+    <div class="container">
+        <div class="indicator">
+           <span class="btn active"></span>
+           <span class="btn"></span> 
+           <span class="btn"></span> 
+           <span class="btn"></span>  
         </div>
-        <div class="content">
-            <h1>PHAN HO QUOC KHANH</h1>
-            <p>Contact with me</p>
-            <div>
-                <button type="button" onclick="location.href='https://www.facebook.com/quockhanh.ph.9/'"><span></span>Facebook</button>
-                <button type="button" onclick="location.href='https://www.instagram.com/q.khanhph03/'"><span></span>Instagram</button>
+        <div class="Testing">
+        <div class="slide-row" id="slide">
+            <div class="slide-col">
+                <div class="user-text ">
+                    <p>Giáo sư khói học, người nghiện tri thức.<br> Đổi nhà vài lần trong 1 năm.<br>Đệ tử Harry Maguire</p>
+                    <h3>TUẤN TƯỜNG</h3>
+                </div>
+                <div class="user-img">
+                    <img src="tuongngu.jpg">
+                </div>           
             </div>
-
-        </div>
-
+            <div class="slide-col">
+                <div class="user-text ">
+                    <p>Trùm trường mẫu giáo</p>
+                    <h3>Hoàng Duy</h3>
+                </div>
+                <div class="user-img">
+                    <img src="duyngu.jpg">
+                </div>           
+            </div>
+            <div class="slide-col">
+                <div class="user-text ">
+                    <p>Trùm bất động sản Củ Chi<br> Ăn 100000$ xong xóa app <br>Fan cứng Thiên Ân</p>
+                    <h3>Lê Minh Nhật</h3>
+                </div>
+                <div class="user-img">
+                    <img src="nhat.jpg">
+                </div>           
+            </div>
+            <div class="slide-col">
+                <div class="user-text ">
+                    <p>Harry Maguire <br> Người có thể chửi mọi thứ trên thế giới </p>
+                    <h3>Quốc Thịnh</h3>
+                </div>
+                <div class="user-img">
+                    <img src="thinh.jpg">
+                </div>           
+            </div>
+        </div>    
+        </div>    
     </div>
+</div>
+
+<script>
+
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide");
+
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+         
+    }
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[3].onclick = function(){
+        slide.style.transform = "translateX(-2400px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    
+</script>
+
 </body>
 </html>
